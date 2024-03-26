@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox CSS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-  <h1>Aprendendo Flexbox</h1>
-  <p>Flexbox, traduzindo ao pé da letra, seria Flexible Box (Caixa Flexivel) </p>
-    <p>Serve para alinhar elementos em um container de forma dinâmica.</p>
+  <main>
+    <section class="texto">
+      <h1>Aprendendo FlexBox</h1>
+      <p>FlexBox, traduzindo ao pé da letra, seria Flexible Box (Caixa Flexivel) </p>
+        <p>Serve para alinhar elementos em um container de forma dinâmica.</p>
+        <p>O container é um elemento-pai, podendo por exemplo ser uma "div" ou um "ul"</p>
+        <p>O container sempre é uma tag que vai estar por fora dos elementos que serão alinhados, por exemplo uma tag "ul" com seus elementos-filho sendo algumas "li" e ele que receberá as propriedades do flexbox, nao os elementos-filhos.</p>
+        
+    </section>
 
-    <p>O container é um elemento-pai, podendo por exemplo ser uma "div" ou um "ul"</p>
+        <section class="img-exemplo">
+          <p>Confira a exemplificação a seguir:</p>
+          <img src="imagens/flexbox-1.jpg" alt="exemplo" id="exemplo1">
+          <p> Por padrão, nossos elementos ficam dispostos no canto esquerdo superior e de forma vertical (eixo principal) com eixos perpendiculares horizontais (eixo secundario)</p>
+        </section>
 
-    <p>O container sempre é uma tag que vai estar por fora dos elementos que serão alinhados, por exemplo uma tag "ul" com seus elementos-filho sendo algumas "li" e ele que receberá as propriedades do flexbox, nao os elementos-filhos.</p>
 
-    <p>Confira a exemplificação a seguir:</p>
 
-  <main class="container">
-      <div class="bloco-1">1</div>
-      <div class="bloco-2">2</div>
-      <div class="bloco-3">3</div>
   </main>
 
 </body>
