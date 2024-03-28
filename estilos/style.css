@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+code{
+  color: blue;
+  font-weight: bolder;
+}
+
+span{
+  color: rgb(11, 158, 11);
+  font-weight: bolder;
+}
+
+section{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  background-color: rgb(223, 190, 160);
+  color: black;
+  margin: 1.0rem;
+  padding: 1.0rem;
+  text-align: center;
+  border-radius: 2.5rem;
+}
+
+section > article > h1, h2{
+  text-align: center;
+}
+
+article{
+  padding-bottom: 5rem;
+}
+
+
+
+.intro{
+  text-align: justify;
+}
+
+.intro > h1{
+  display: block;
+   font-size: 5rem;
+   margin-bottom: 2rem;
+}
+
+.intro > .link{
+  text-align: center;
+}
+
+.intro > .link > a{
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+}
+
+.intro > .link > a:hover{
+  background-color: red ;
+  color: rgb(223, 190, 160) ;
+}
+
+.intro > ul{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.intro > ul > li{
+  margin: 1.0rem;
+  text-indent: 0.5rem;
+}
+
+.intro > img{
+  width: 50rem;
+}
+

@@ -1,37 +1,242 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox CSS</title>
-  <link rel="stylesheet" href="estilos/style.css">
-</head>
-<body>
-  <main>
-    <section class="texto">
-      <h1>Aprendendo FlexBox</h1>
-      <p>FlexBox, traduzindo ao pé da letra, seria Flexible Box (Caixa Flexivel) </p>
-        <p>Serve para alinhar elementos em um container de forma dinâmica.</p>
-        <p>O container é um elemento-pai, podendo por exemplo ser uma "div" ou um "ul"</p>
-        <p>O container sempre é uma tag que vai estar por fora dos elementos que serão alinhados, por exemplo uma tag "ul" com seus elementos-filho sendo algumas "li" e ele que receberá as propriedades do flexbox, nao os elementos-filhos.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox CSS</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section>
+
+
+        <article class="intro">
+
+          <h1>Aprendendo FlexBox</h1>
+          <div class="link"><a href="exercicio-01.html">Para ir ao exercicio, clique aqui!</a></div>
+
+          <ul>
+            <li><strong>FlexBox</strong>, traduzido literalmente, significa <strong><u>Caixa Flexível</u></strong>.</li>
+            <li>
+              É usado para alinhar dinamicamente elementos dentro de um
+              <span>".container"</span>.
+            </li>
+            <li>
+              <strong>O container é um elemento pai</strong>, como uma "div" ou "ul". Ele define
+              o contexto de layout para os elementos filhos.
+            </li>
+            <li>
+              O Flexbox oferece um conjunto de propriedades que permitem
+              controlar o layout, o alinhamento e a distribuição dos itens
+              dentro do container.
+            </li>
+            <li>
+              Alguns exemplos de propriedades do Flexbox incluem
+              <code>display: flex</code> para definir um container como
+              flexível, <code>justify-content</code> para alinhar itens ao
+              longo do eixo principal, e <code>align-items</code> para
+              alinhar itens ao longo do eixo transversal.
+            </li>
+            <li>
+              Os elementos filhos dentro do container flexível são chamados de
+              "itens flexíveis". Eles podem ter seu próprio tamanho, ordem e
+              alinhamento, independentemente dos outros itens.
+            </li>
+          </ul>
+          <p><strong>Confira o exemplo a seguir:</strong></p>
+          <img src="imagens/flexbox-1.jpg" alt="exemplo" id="exemplo1" />
+          <p>
+            Ao utilizar <strong>"display: flex"</strong> na
+            <strong>"main"</strong> com a classe <strong>"container"</strong>,
+            os itens dentro dela serão dispostos horizontalmente por padrão, com
+            o eixo principal seguindo essa direção. O eixo secundário, por sua
+            vez, permanece vertical, como padrão.
+          </p>
+          <img
+            src="imagens/flexbox-2.jpg"
+            alt="container display flex imagem"
+          />
+          <img
+            src="imagens/flexbox-3.jpg"
+            alt="imagens dispostas em display flex"
+          />
         
-    </section>
-
-        <section class="img-exemplo">
-          <p>Confira a exemplificação a seguir:</p>
-          <img src="imagens/flexbox-1.jpg" alt="exemplo" id="exemplo1">
-          <p> Por padrão, nossos elementos ficam dispostos no canto esquerdo superior e de forma vertical (eixo principal) com eixos perpendiculares horizontais (eixo secundario)</p>
-
-          <p>Ao aplicarmos a propriedade <strong>"display: flex"</strong> na <strong>"main"</strong> de <strong>"class=container"</strong> veja como os elementos se comportam:</p>
-          <img src="imagens/flexbox-2.jpg" alt="">
-          <img src="imagens/flexbox-3.jpg" alt="">
+        </article>
 
 
-        </section>
+          <article class="flex-direction">
+
+            <h2>Propriedade <code>flex-direction:</code></h2>
+            <p>
+              A propriedade CSS flex-direction define a direção principal em que
+              os itens flexíveis são posicionados dentro de um container flexível.
+              Ela determina se os itens são dispostos horizontalmente ou
+              verticalmente, assim como a ordem em que aparecem no layout. Existem
+              quatro valores principais para flex-direction:
+            </p>
+            <img src="imagens/flexbox-4.jpg" alt="flex-direction propriedades" />
+            <ul>
+              <li>
+                row: Os itens são dispostos da esquerda para a direita na direção
+                do eixo principal, com o início à esquerda e o final à direita.
+              </li>
+              <li>
+                row-reverse: Similar a row, mas os itens são dispostos da direita
+                para a esquerda, com o início à direita e o final à esquerda.
+              </li>
+              <li>
+                column: Os itens são dispostos de cima para baixo na direção do
+                eixo principal, com o início no topo e o final na parte inferior.
+              </li>
+              <li>
+                column-reverse: Similar a column, mas os itens são dispostos de
+                baixo para cima, com o início na parte inferior e o final no topo.
+              </li>
+            </ul>
+            <p>
+              Por padrão, quando a propriedade <code>flex-direction </code>não é
+              especificada, o valor assumido é <strong>row</strong>. Isso
+              significa que os itens flexíveis são dispostos da esquerda para a
+              direita na direção do eixo principal, com o início à esquerda e o
+              final à direita dentro do container flexível.
+            </p>
+            <p>O valor "row" é o que utilizaremos no decorrer da matéria.</p>
+          </article>
 
 
+          <article class="justify-content">
 
-  </main>
+            <h2>Propriedade <code>justify-content:</code></h2>
+            <p>
+              A propriedade CSS <code>justify-content</code> é utilizada em
+              containers flexíveis para controlar o alinhamento dos itens
+              flexíveis ao longo do eixo principal. Ela determina como o espaço
+              disponível é distribuído entre os itens flexíveis quando há espaço
+              sobrando no container. Existem vários valores possíveis para
+              <code>justify-content</code>, cada um com um efeito distinto no
+              layout:
+            </p>
+            <img src="imagens/flexbox-5.jpg" alt="justify-content propriedades" />
+            <ul>
+              <li>
+                flex-start: Alinha os itens no início do container ao longo do
+                eixo principal.
+              </li>
+              <li>
+                flex-end: Alinha os itens no final do container ao longo do eixo
+                principal.
+              </li>
+              <li>
+                center: Centraliza os itens ao longo do eixo principal dentro do
+                container.
+              </li>
+              <li>
+                space-between: Distribui os itens igualmente ao longo do eixo
+                principal, com espaços iguais entre eles e nas extremidades.
+              </li>
+              <li>
+                space-around: Distribui os itens igualmente ao longo do eixo
+                principal, com espaços iguais ao redor deles.
+              </li>
+            </ul>
+            <p>
+              Por padrão, quando a propriedade <code>justify-content</code> não é
+              especificada, o valor assumido é <strong>flex-start</strong>, o que
+              significa que os itens são alinhados no início do container ao longo
+              do eixo principal. <strong>No entanto, ao longo do curso, utilizaremos
+              o valor center</strong>, que centraliza os
+              itens ao longo do eixo principal dentro do container flexível. Isso
+              proporciona um layout mais equilibrado e esteticamente agradável.
+              Também adicionaremos 500px de altura pro nosso container.</p>
+          </article>
 
-</body>
+
+            <article class="align-items">
+
+              <h2>Propriedade <code>align-items:</code></h2>
+              <p>
+                A propriedade CSS <code>align-items</code> é utilizada em containers flexíveis para controlar o alinhamento dos itens flexíveis ao longo do eixo transversal. Ela determina como os itens são posicionados verticalmente dentro do container flexível. Existem vários valores possíveis para <code>align-items</code>, cada um com um efeito específico no layout:</p>
+                <img src="imagens/flexbox-6.jpg" alt="">
+                <ul>
+              
+                  <li>flex-start: Os itens são alinhados no início do container ao longo do eixo transversal.</li>
+                  <li>flex-end: Os itens são alinhados no final do container ao longo do eixo transversal.</li>
+                  <li>center: Os itens são centralizados verticalmente dentro do container ao longo do eixo transversal.</li>
+                  <li>stretch: Os itens são esticados para preencher todo o tamanho do container no eixo transversal.</li>
+                  <li>baseline: Os itens são alinhados com base na linha de base de seu conteúdo, se houver, dentro do container.</li>
+                </ul>
+
+            </article>
+
+
+              <article class="flex-wrap">
+
+                <h2>Propriedade <code>flex-wrap</code></h2>
+                <p>A propriedade CSS flex-wrap é utilizada em containers flexíveis para controlar o comportamento de quebra de linha dos itens flexíveis quando não há espaço suficiente no container para todos os itens ocuparem uma única linha. Ela determina se os itens devem ser dispostos em uma única linha (o valor padrão) ou se podem ser quebrados em linhas múltiplas. Existem três valores possíveis para flex-wrap:</p>
+                <img src="imagens/flexbox-7.jpg" alt="">
+                <ul>
+                  <li>nowrap: Os itens são forçados a permanecerem em uma única linha, mesmo que isso cause transbordamento do container.</li>
+                  <li>wrap: Os itens são dispostos em várias linhas, se necessário, para que todos se ajustem dentro do container.</li>
+                  <li>wrap-reverse: Os itens são dispostos em várias linhas, começando da última linha até a primeira.</li>
+                </ul>
+
+              </article>
+
+
+              <article class="flex-flow">
+
+                <h2>Propriedade <code>flex-flow</code></h2>
+                <p>A propriedade CSS flex-flow é uma abreviação conveniente que combina as propriedades flex-direction e flex-wrap em uma única declaração. Isso permite definir a direção de layout dos itens flexíveis ao longo do eixo principal e controlar se os itens podem ser quebrados em múltiplas linhas, tudo em uma única linha de código.</p>
+                <p>A sintaxe geral da propriedade flex-flow é:</p>
+                <code>flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;;
+                </code>
+                <p>No estudo usaremos:</p>
+                <code>flex-flow: row wrap;
+                </code>
+
+              </article>
+
+
+              <article class="align-content">
+
+                <h2>Propriedade <code>align-content</code></h2>
+                <p>A propriedade CSS <code>align-conten</code>t é utilizada em containers flexíveis de múltiplas linhas para controlar o alinhamento dos itens flexíveis ao longo do eixo transversal, quando há espaço extra disponível no container. Lembrando que essa propriedade só se torna ativa se utilizarmos <code>flex-wrap: wrap;</code></p>
+                <img src="imagens/flexbox-8.jpg" alt="">
+                <ul>
+                  <li>flex-start: Alinha as linhas de itens no início do container.</li>
+                  <li>flex-end: Alinha as linhas de itens no final do container.</li>
+                  <li>center: Centraliza as linhas de itens verticalmente no container.</li>
+                  <li>space-between: Distribui o espaço restante de forma uniforme entre as linhas de itens, com espaços iguais entre elas e nas extremidades.</li>
+                  <li>space-around: Distribui o espaço restante de forma uniforme entre as linhas de itens, com espaços iguais ao redor delas.</li>
+                  <li>stretch: Estica as linhas de itens para preencher todo o espaço disponível no eixo transversal.</li></ul>
+
+              </article>
+
+
+                <article class="gap">
+
+                  <h2>Propriedade <code>gap</code>, <code>row-gap</code> e <code>column-gap</code></h2>
+                  <p>As propriedades gap, row-gap e column-gap são utilizadas em layouts de grade (grid) para controlar o espaçamento entre as linhas e colunas dos itens dentro do grid.</p>
+                  <ul>
+                    <li>gap: Esta propriedade CSS é uma abreviação conveniente para definir o espaçamento entre as linhas e colunas de um grid. Ela define o espaçamento tanto horizontalmente (entre as colunas) quanto verticalmente (entre as linhas) do grid. Quando usada sozinha, ela define o mesmo valor para row-gap e column-gap. Por exemplo: gap: 10px; define um espaçamento de 10 pixels entre as linhas e colunas.</li>
+                    <li>row-gap: Esta propriedade CSS define o espaçamento entre as linhas de um grid. Ela é usada para controlar o espaçamento vertical entre as linhas, deixando um espaço definido entre cada linha do grid.</li>
+                    <li>column-gap: Esta propriedade CSS define o espaçamento entre as colunas de um grid. Ela é usada para controlar o espaçamento horizontal entre as colunas, deixando um espaço definido entre cada coluna do grid.</li>
+                  </ul>
+              </article>
+
+              <article class="revisao">
+
+                <h2>Hora da Revisão!</h2>
+
+                <img src="imagens/flexbox-9.jpg" alt="">
+
+              </article>
+
+
+      </section>
+    </main>
+  </body>
 </html>
