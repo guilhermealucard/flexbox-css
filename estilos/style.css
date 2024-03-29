@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -32,6 +33,10 @@ section{
   padding: 1.0rem;
   text-align: center;
   border-radius: 2.5rem;
+}
+
+section > nav{
+  
 }
 
 section > article > h1, h2{
@@ -203,6 +208,7 @@ border: 0.3rem solid black;
             .revisao{
               background-color: rgb(189, 150, 185);
               padding: 1rem;
+              border: 0.3rem solid black;
               
             }
 
