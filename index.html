@@ -15,8 +15,10 @@
 
         <article class="intro">
 
-          <h1>Aprendendo FlexBox</h1>
-          <div class="link"><a href="exercicio-01.html">Para ir ao exercicio, clique aqui!</a></div>
+          <h1>FlexBox</h1>
+          <div class="link"><a href="exercicio-01.html">Para ir ao exercício, clique aqui!</a></div>
+
+          <a href="#flex-direction">AAA</a>
 
           <ul>
             <li><strong>FlexBox</strong>, traduzido literalmente, significa <strong><u>Caixa Flexível</u></strong>.</li>
@@ -69,33 +71,48 @@
 
           <article class="flex-direction">
 
-            <h2>Propriedade <code>flex-direction:</code></h2>
+            <h2><code>flex-direction</code></h2>
             <p>
-              A propriedade CSS flex-direction define a direção principal em que
+              A propriedade CSS <code>flex-direction</code> define a direção principal em que
               os itens flexíveis são posicionados dentro de um container flexível.
               Ela determina se os itens são dispostos horizontalmente ou
               verticalmente, assim como a ordem em que aparecem no layout. Existem
               quatro valores principais para flex-direction:
             </p>
-            <img src="imagens/flexbox-4.jpg" alt="flex-direction propriedades" />
-            <ul>
-              <li>
-                row: Os itens são dispostos da esquerda para a direita na direção
-                do eixo principal, com o início à esquerda e o final à direita.
-              </li>
-              <li>
-                row-reverse: Similar a row, mas os itens são dispostos da direita
-                para a esquerda, com o início à direita e o final à esquerda.
-              </li>
-              <li>
-                column: Os itens são dispostos de cima para baixo na direção do
-                eixo principal, com o início no topo e o final na parte inferior.
-              </li>
-              <li>
-                column-reverse: Similar a column, mas os itens são dispostos de
-                baixo para cima, com o início na parte inferior e o final no topo.
-              </li>
-            </ul>
+
+             <img src="imagens/flexbox-4.jpg" alt="flex-direction propriedades" />
+                  
+                    
+                      <ul>
+                        <code>row:</code>
+                          <li>
+                            Os itens são dispostos da esquerda para a direita na direção
+                            do eixo principal, com o início à esquerda e o final à direita.
+                          </li>
+                      
+                        <code>row-reverse:</code>
+                         <li>
+                           Similar a row, mas os itens são dispostos da direita
+                           para a esquerda, com o início à direita e o final à esquerda.
+                         </li>
+                      
+                        <code>column:</code>
+                        <li>
+                          Os itens são dispostos de cima para baixo na direção do
+                          eixo principal, com o início no topo e o final na parte inferior.
+                        </li>
+                      
+                        <code>column-reverse:</code>
+                        <li>
+                          Similar a column, mas os itens são dispostos de
+                          baixo para cima, com o início na parte inferior e o final no topo.
+                        </li>
+                      </ul>
+                    
+                
+                
+              
+            
             <p>
               Por padrão, quando a propriedade <code>flex-direction </code>não é
               especificada, o valor assumido é <strong>row</strong>. Isso
@@ -109,7 +126,7 @@
 
           <article class="justify-content">
 
-            <h2>Propriedade <code>justify-content:</code></h2>
+            <h2><code>justify-content</code></h2>
             <p>
               A propriedade CSS <code>justify-content</code> é utilizada em
               containers flexíveis para controlar o alinhamento dos itens
@@ -156,7 +173,7 @@
 
             <article class="align-items">
 
-              <h2>Propriedade <code>align-items:</code></h2>
+              <h2><code>align-items</code></h2>
               <p>
                 A propriedade CSS <code>align-items</code> é utilizada em containers flexíveis para controlar o alinhamento dos itens flexíveis ao longo do eixo transversal. Ela determina como os itens são posicionados verticalmente dentro do container flexível. Existem vários valores possíveis para <code>align-items</code>, cada um com um efeito específico no layout:</p>
                 <img src="imagens/flexbox-6.jpg" alt="">
@@ -174,7 +191,7 @@
 
               <article class="flex-wrap">
 
-                <h2>Propriedade <code>flex-wrap</code></h2>
+                <h2><code>flex-wrap</code></h2>
                 <p>A propriedade CSS flex-wrap é utilizada em containers flexíveis para controlar o comportamento de quebra de linha dos itens flexíveis quando não há espaço suficiente no container para todos os itens ocuparem uma única linha. Ela determina se os itens devem ser dispostos em uma única linha (o valor padrão) ou se podem ser quebrados em linhas múltiplas. Existem três valores possíveis para flex-wrap:</p>
                 <img src="imagens/flexbox-7.jpg" alt="">
                 <ul>
@@ -188,7 +205,7 @@
 
               <article class="flex-flow">
 
-                <h2>Propriedade <code>flex-flow</code></h2>
+                <h2><code>flex-flow</code></h2>
                 <p>A propriedade CSS flex-flow é uma abreviação conveniente que combina as propriedades flex-direction e flex-wrap em uma única declaração. Isso permite definir a direção de layout dos itens flexíveis ao longo do eixo principal e controlar se os itens podem ser quebrados em múltiplas linhas, tudo em uma única linha de código.</p>
                 <p>A sintaxe geral da propriedade flex-flow é:</p>
                 <code>flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;;
