@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,103 +7,134 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
 }
 
-body{
+body {
   background-color: black;
   color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
-code{
+header {
+  background-color: rgb(13, 190, 166);
+}
+
+header > h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+span#burguer {
+  color: black;
+  width: 100vw;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+span#burguer:hover {
+  background-color: rgb(12, 148, 130);
+  cursor: pointer;
+}
+
+#itens {
+display: none;
+}
+
+#itens > li {
+  list-style-type: none;
+}
+
+#itens> ul > li > a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color:white;
+  border-top: 2px solid gray
+}
+
+#itens > ul> li > a:hover{
+  background-color: gray;
+}
+
+#itens > ul > li > .a1{
+  background-color: gray;
+}
+
+#itens > ul > li > .a2{
+  background-color: rgb(56, 53, 53)
+}
+
+#itens > ul > li > a:hover{
+  background-color: rgb(255, 145, 0);
+  color: black;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+code {
   color: blue;
   font-weight: bolder;
 }
 
-span{
+span {
   color: rgb(11, 158, 11);
   font-weight: bolder;
 }
 
-section{
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 900px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.7rem;
-  background-color: rgb(223, 190, 160);
+
   color: black;
-  margin: 1.0rem;
-  padding: 1.0rem;
+  margin: 1rem;
+  padding: 1rem;
   text-align: center;
   border-radius: 2.5rem;
+  transform: translate(-50%, -50%);
 }
 
-section > nav{
-  display: flex;
-  justify-content: center;
-  gap: 0.3rem;
-  margin-bottom: 0.5rem;
-}
-
-section > nav > a{
-  display: inline-block;
-  border: 0.1rem solid black;
-  padding: 0.5rem;
-  border-radius: 2.5rem;
-  text-decoration: none;
-  margin: 1rem 0rem;
-  color: black;
-  
-}
-
-section > nav > .a1{
-  background-color: rgb(159, 248, 218);
-}
-
-section > nav > .a2{
-  background-color: rgb(189, 150, 185);
-}
-
-section > nav > .a3{
-  background-color: rgb(212, 115, 147);
-}
-
-section > nav > .a4{
-  background-color: red;
-  color: yellow;
-
-}
-
-section > nav > a:hover{
-  background-color: yellow;
-}
-
-section > nav > .a4:hover{
-  color: black;
-}
-
-section > article > h1, h2{
+section > article > h1,
+h2 {
   text-align: center;
 }
 
-article{
+article {
   padding-bottom: 5rem;
   margin-bottom: 5rem;
   border-radius: 5rem;
-  overflow: hidden;
 }
 
-ul{
+ul {
   background-color: rgb(168, 168, 168);
   margin: 30px 0px;
   text-decoration: none;
   border: 3px solid black;
   list-style: none;
-  
 }
 
-.intro{
+.intro {
   text-align: center;
+  background-color: rgb(223, 190, 160);
+  border: 0.3rem solid black;
 }
 
-.intro > ul{
+.intro > ul {
   text-align: justify;
   padding: 2rem;
   background-color: rgb(223, 190, 160);
@@ -112,22 +143,17 @@ ul{
   margin: 1rem;
 }
 
-.intro > h1{
+.intro > h1 {
   display: block;
-   font-size: 4rem;
-   margin-bottom: 2rem;
-
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
-.intro > .link{
-  text-align: center;
-}
-
-.intro > p{
+.intro > p {
   padding: 2rem;
 }
 
-.intro > .link > a{
+.intro > .link > a {
   text-decoration: none;
   color: red;
   border: 2px solid red;
@@ -135,17 +161,22 @@ ul{
   padding: 0.5rem;
 }
 
-.intro > .link > a:hover{
-  background-color: red ;
-  color: rgb(223, 190, 160) ;
+.intro > .link > a:hover {
+  background-color: red;
+  color: rgb(223, 190, 160);
 }
 
-.flex-direction{
-background-color: rgb(159, 248, 218);
-border: 0.3rem solid black;
+.intro > img {
+  width: 100%;
+  padding: 1rem;
 }
 
-.flex-direction > h2{
+.flex-direction {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
+
+.flex-direction > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
@@ -155,105 +186,102 @@ border: 0.3rem solid black;
   text-indent: 3rem;
 }
 
-.justify-content{
+.justify-content {
   background-color: rgb(189, 150, 185);
   border: 0.3rem solid black;
-  }
-  
-  .justify-content > h2{
-    padding: 1rem;
-    border: 0.1rem solid black;
-  }
-  
-  .justify-content > p {
-    padding: 1rem;
-    text-indent: 3rem;
-  }
+}
 
-  .align-items{
-    background-color: rgb(212, 115, 147);
-    border: 0.3rem solid black;
-    }
-    
-    .align-items > h2{
-      padding: 1rem;
-      border: 0.1rem solid black;
-    }
-    
-    .align-items > p {
-      padding: 1rem;
-      text-indent: 3rem;
-    }
+.justify-content > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
 
-    .flex-wrap{
-      background-color: rgb(159, 248, 218);
-      border: 0.3rem solid black;
-      }
-      
-      .flex-wrap > h2{
-        padding: 1rem;
-        border: 0.1rem solid black;
-      }
-      
-      .flex-wrap > p {
-        padding: 1rem;
-        text-indent: 3rem;
-      }
+.justify-content > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
 
-      .flex-flow{
-        background-color: rgb(189, 150, 185);
-        border: 0.3rem solid black;
-        }
-        
-        .flex-flow > h2{
-          padding: 1rem;
-          border: 0.1rem solid black;
-        }
-        
-        .flex-flow > p {
-          padding: 1rem;
-          text-indent: 3rem;
-        }
+.align-items {
+  background-color: rgb(212, 115, 147);
+  border: 0.3rem solid black;
+}
 
-        .align-content{
-          background-color: rgb(212, 115, 147);
-          border: 0.3rem solid black;
-          }
-          
-          .align-content > h2{
-            padding: 1rem;
-            border: 0.1rem solid black;
-          }
-          
-          .align-content > p {
-            padding: 1rem;
-            text-indent: 3rem;
-          }
+.align-items > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
 
-          .gap{
-            background-color: rgb(159, 248, 218);
-            border: 0.3rem solid black;
-            }
-            
-            .gap > h2{
-              padding: 1rem;
-              border: 0.1rem solid black;
-            }
-            
-            .gap > p {
-              padding: 1rem;
-              text-indent: 3rem;
-            }
+.align-items > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
 
-            .revisao{
-              background-color: rgb(189, 150, 185);
-              padding: 1rem;
-              border: 0.3rem solid black;
-              
-            }
+.flex-wrap {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
 
-            .revisao > h2{
-              padding: 1rem;
-            }
+.flex-wrap > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
 
-          
+.flex-wrap > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.flex-flow {
+  background-color: rgb(189, 150, 185);
+  border: 0.3rem solid black;
+}
+
+.flex-flow > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.flex-flow > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.align-content {
+  background-color: rgb(212, 115, 147);
+  border: 0.3rem solid black;
+}
+
+.align-content > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.align-content > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.gap {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
+
+.gap > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.gap > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.revisao {
+  background-color: rgb(189, 150, 185);
+  padding: 1rem;
+  border: 0.3rem solid black;
+}
+
+.revisao > h2 {
+  padding: 1rem;
+}
