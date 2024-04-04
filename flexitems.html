@@ -19,7 +19,7 @@
 
       <nav>
         <div>Exercicio Flex Container</div>
-        <div>Flex Items</div>
+        <div>Flex Container</div>
         <div>Exercicio Flex Items</div>
       </nav>
     </header>
@@ -29,59 +29,16 @@
     <main>
       <section>
         <article class="intro" id="intro">
-          <h1>Introdução ao FlexBox</h1>
-          <h2>FlexBox Container</h2>
+        
+          <h1>Flex Items</h1>
 
-          <ul>
-            <li>
-              <strong>FlexBox</strong>, traduzido literalmente, significa
-              <strong><u>Caixa Flexível</u></strong
-              >.
-            </li>
-            <li>
-              É usado para alinhar dinamicamente elementos dentro de um
-              <span>".container"</span>.
-            </li>
-            <li>
-              <strong>O container é um elemento pai</strong>, como uma "div" ou
-              "ul". Ele define o contexto de layout para os elementos filhos.
-            </li>
-            <li>
-              O Flexbox oferece um conjunto de propriedades que permitem
-              controlar o layout, o alinhamento e a distribuição dos itens
-              dentro do container.
-            </li>
-            <li>
-              Alguns exemplos de propriedades do Flexbox incluem
-              <code>display: flex</code> para definir um container como
-              flexível, <code>justify-content</code> para alinhar itens ao longo
-              do eixo principal, e <code>align-items</code> para alinhar itens
-              ao longo do eixo transversal.
-            </li>
-            <li>
-              Os elementos filhos dentro do container flexível são chamados de
-              "itens flexíveis". Eles podem ter seu próprio tamanho, ordem e
-              alinhamento, independentemente dos outros itens.
-            </li>
-          </ul>
+          <p>Os flex items são os elementos filhos de um flex container. Quando você aplica <code>display: flex;</code> a um elemento pai, ele se torna um <strong>flex container</strong> e seus filhos diretos se tornam <strong>flex items</strong>.</p>
+          
           <p><strong>Confira o exemplo a seguir:</strong></p>
-          <img src="imagens/flexbox-1.jpg" alt="exemplo" id="exemplo1" />
+          <img src="imagens/flexitems1.jpg" alt="exemplo" id="exemplo1" />
           <p>
-            Ao utilizar <strong>"display: flex"</strong> na
-            <strong>"main"</strong> com a classe <strong>"container"</strong>,
-            os itens dentro dela serão dispostos horizontalmente por padrão, com
-            o eixo principal seguindo essa direção. O eixo secundário, por sua
-            vez, permanece vertical, como padrão.
+            Como visto nesse exemplo, Essas configurações serao aplicadas nos filhos, os flex items.
           </p>
-          <img
-            src="imagens/flexbox-2.jpg"
-            alt="container display flex imagem"
-          />
-          <img
-            src="imagens/flexbox-3.jpg"
-            alt="imagens dispostas em display flex"
-          />
-        </article>
 
         <article class="flex-direction" id="flex-direction">
           <h2><code>flex-direction</code></h2>
