@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox CSS</title>
-    <link rel="stylesheet" href="estilos/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    <link rel="stylesheet" href="estilos/style2.css" />
   </head>
 
   <body>
@@ -32,60 +28,29 @@
         
           <h1>Flex Items</h1>
 
+          <p>Confira aqui o <a href="#">exercício Flex Items</a></p>
+
           <p>Os flex items são os elementos filhos de um flex container. Quando você aplica <code>display: flex;</code> a um elemento pai, ele se torna um <strong>flex container</strong> e seus filhos diretos se tornam <strong>flex items</strong>.</p>
           
           <p><strong>Confira o exemplo a seguir:</strong></p>
           <img src="imagens/flexitems1.jpg" alt="exemplo" id="exemplo1" />
           <p>
-            Como visto nesse exemplo, Essas configurações serao aplicadas nos filhos, os flex items.
-          </p>
+            Como visto nesse exemplo, aplicamos a propriedade <code>order</code> nos filhos, os flex items.
+          </p></article>
 
-        <article class="flex-direction" id="flex-direction">
-          <h2><code>flex-direction</code></h2>
+        <article class="order" id="order">
+          <h2><code>order</code></h2>
           <p>
-            A propriedade CSS <code>flex-direction</code> define a direção
-            principal em que os itens flexíveis são posicionados dentro de um
-            container flexível. Ela determina se os itens são dispostos
-            horizontalmente ou verticalmente, assim como a ordem em que aparecem
-            no layout. Existem quatro valores principais para flex-direction:
+            A propriedade <code>order</code> no CSS é usada para alterar a ordem de apresentação dos <strong>flex items</strong> dentro de um <strong>flex container</strong>. Por padrão, os itens flexíveis são exibidos na ordem em que aparecem no código-fonte. No entanto, com a propriedade order, você pode controlar essa ordem sem alterar o HTML.
           </p>
 
-          <img src="imagens/flexbox-4.jpg" alt="flex-direction propriedades" />
+          <img src="imagens/flexitems2.jpg" alt="flex-direction propriedades" />
 
-          <ul>
-            <code>row:</code>
-            <li>
-              Os itens são dispostos da esquerda para a direita na direção do
-              eixo principal, com o início à esquerda e o final à direita.
-            </li>
+          <p>Se você definir <code>order: 1</code> para um item e <code>order: 0</code> para outro, o segundo item aparecerá antes do primeiro na página, <strong>mesmo que venha depois no código-fonte</strong>. O valor padrão da propriedade é <code>order: 0</code>, e você pode usar números negativos ou positivos para posicionar os itens conforme necessário.</p>
 
-            <code>row-reverse:</code>
-            <li>
-              Similar a row, mas os itens são dispostos da direita para a
-              esquerda, com o início à direita e o final à esquerda.
-            </li>
+         
 
-            <code>column:</code>
-            <li>
-              Os itens são dispostos de cima para baixo na direção do eixo
-              principal, com o início no topo e o final na parte inferior.
-            </li>
-
-            <code>column-reverse:</code>
-            <li>
-              Similar a column, mas os itens são dispostos de baixo para cima,
-              com o início na parte inferior e o final no topo.
-            </li>
-          </ul>
-
-          <p>
-            Por padrão, quando a propriedade <code>flex-direction </code>não é
-            especificada, o valor assumido é <strong>row</strong>. Isso
-            significa que os itens flexíveis são dispostos da esquerda para a
-            direita na direção do eixo principal, com o início à esquerda e o
-            final à direita dentro do container flexível.
-          </p>
-          <p>O valor "row" é o que utilizaremos no decorrer da matéria.</p>
+          
         </article>
 
         <article class="justify-content" id="justify-content">

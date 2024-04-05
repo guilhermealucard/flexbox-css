@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  padding-top: 200px;
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+header { 
+  background-color: rgb(13, 190, 166);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+header > h1{
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+header > img{
+width: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 5px;
+
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 20px;
+}
+
+nav > div{
+  border: 1px solid black;
+  background-color: gray;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+code {
+  color: blue;
+  font-weight: bolder;
+}
+
+span {
+  color: rgb(11, 158, 11);
+  font-weight: bolder;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  color: black;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  transform: translate(-50%, -50%);
+}
+
+section > article > h1,
+h2 {
+  text-align: center;
+}
+
+article {
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 5rem;
+}
+
+ul {
+  background-color: rgb(168, 168, 168);
+  margin: 30px 0px;
+  text-decoration: none;
+  border: 3px solid black;
+  list-style: none;
+}
+
+.intro {
+  text-align: center;
+  background-color: rgb(223, 190, 160);
+  border: 0.3rem solid black;
+}
+
+.intro > ul {
+  text-align: justify;
+  padding: 2rem;
+  background-color: rgb(223, 190, 160);
+  border: none;
+  list-style: disc;
+  margin: 1rem;
+}
+
+.intro > h1 {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.intro > p {
+  padding: 2rem;
+}
+
+.intro > .link > a {
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+}
+
+.intro > .link > a:hover {
+  background-color: red;
+  color: rgb(223, 190, 160);
+}
+
+.intro > img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.order {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
+
+.order > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.order > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.justify-content {
+  background-color: rgb(189, 150, 185);
+  border: 0.3rem solid black;
+}
+
+.justify-content > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.justify-content > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.align-items {
+  background-color: rgb(212, 115, 147);
+  border: 0.3rem solid black;
+}
+
+.align-items > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.align-items > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.flex-wrap {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
+
+.flex-wrap > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.flex-wrap > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.flex-flow {
+  background-color: rgb(189, 150, 185);
+  border: 0.3rem solid black;
+}
+
+.flex-flow > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.flex-flow > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.align-content {
+  background-color: rgb(212, 115, 147);
+  border: 0.3rem solid black;
+}
+
+.align-content > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.align-content > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.gap {
+  background-color: rgb(159, 248, 218);
+  border: 0.3rem solid black;
+}
+
+.gap > h2 {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+.gap > p {
+  padding: 1rem;
+  text-indent: 3rem;
+}
+
+.revisao {
+  background-color: rgb(189, 150, 185);
+  padding: 1rem;
+  border: 0.3rem solid black;
+}
+
+.revisao > h2 {
+  padding: 1rem;
+}
