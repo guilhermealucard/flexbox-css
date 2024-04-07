@@ -53,53 +53,53 @@
           
         </article>
 
-        <article class="justify-content" id="justify-content">
-          <h2><code>justify-content</code></h2>
+        <article class="flex-grow" id="flex-grow">
+          <h2><code>flex-grow</code></h2>
           <p>
-            A propriedade CSS <code>justify-content</code> é utilizada em
-            containers flexíveis para controlar o alinhamento dos itens
-            flexíveis ao longo do eixo principal. Ela determina como o espaço
-            disponível é distribuído entre os itens flexíveis quando há espaço
-            sobrando no container. Existem vários valores possíveis para
-            <code>justify-content</code>, cada um com um efeito distinto no
-            layout:
+            A propriedade <code>flex-grow</code> no CSS é usada para especificar quanto um <strong>item flexível (flex item)</strong> deve crescer em relação aos outros itens flexíveis dentro do mesmo <strong>contêiner flexível (flex container)</strong>. O valor de <code>flex-grow</code> é um número sem unidade que serve como um fator de crescimento; ele determina a proporção do espaço disponível que o item deve ocupar.</p>
+
+            <p>Por exemplo, se você tem <strong>três itens flexíveis</strong> com <code>flex-grow</code> definido como <strong>1, 2 e 1</strong>, respectivamente, <strong>o segundo item crescerá duas vezes mais que os outros dois em relação ao espaço extra disponível no contêiner.</strong>
+            <p>Por padrão o valor é <code>flex-grow:0</code></p>
+
+            <p><strong>Mas o que acontece se colocarmos flex-grow:1 no primeiro conjunto de blocos?</strong></p>
           </p>
-          <img src="imagens/flexbox-5.jpg" alt="justify-content propriedades" />
-          <ul>
-            <li>
-              flex-start: Alinha os itens no início do container ao longo do
-              eixo principal.
-            </li>
-            <li>
-              flex-end: Alinha os itens no final do container ao longo do eixo
-              principal.
-            </li>
-            <li>
-              center: Centraliza os itens ao longo do eixo principal dentro do
-              container.
-            </li>
-            <li>
-              space-between: Distribui os itens igualmente ao longo do eixo
-              principal, com espaços iguais entre eles e nas extremidades.
-            </li>
-            <li>
-              space-around: Distribui os itens igualmente ao longo do eixo
-              principal, com espaços iguais ao redor deles.
-            </li>
-          </ul>
-          <p>
-            Por padrão, quando a propriedade <code>justify-content</code> não é
-            especificada, o valor assumido é <strong>flex-start</strong>, o que
-            significa que os itens são alinhados no início do container ao longo
-            do eixo principal.
-            <strong
-              >No entanto, ao longo do curso, utilizaremos o valor
-              center</strong
-            >, que centraliza os itens ao longo do eixo principal dentro do
-            container flexível. Isso proporciona um layout mais equilibrado e
-            esteticamente agradável. Também adicionaremos 500px de altura pro
-            nosso container.
-          </p>
+          <img src="imagens/flexitems3.jpg" alt="justify-content propriedades" />
+
+          <p>No exemplo acima, <strong>o bloco 1</strong>  tem um valor de <code>flex-grow</code> <strong>maior que zero</strong>, permitindo que ele <strong>cresça e ocupe mais espaço dentro do contêiner flexível</strong>. Os outros dois blocos, com flex-grow definido como 0, não crescem e mantêm seu tamanho original. Assim, <strong>o bloco 1 expande-se para preencher o espaço restante disponível</strong>, enquanto os outros dois blocos não mudam de tamanho.</p>
+
+          <p>Porém se alterarmos o valor de <code>flex-grow</code> do <strong>.bloco-2 (que são os quadradinhos roxos)</strong>, junto ao <strong>.bloco-1 (quadradinhos azuis)</strong>, observe o que acontece:</p>
+
+          <img src="imagens/flexitems4.jpg" alt="">
+
+          <p>Quando você ajusta a propriedade <code>flex-grow</code> dos <strong> grupos de blocos 1 e 2</strong> para o <strong>mesmo valor positivo igual e superior a zero</strong>, eles <strong>crescem igualmente e ocupam espaços idênticos dentro do contêiner flexível</strong>. Em resumo, os blocos 1 e 2 compartilham o espaço extra de forma igual, enquanto o <strong> grupo de blocos 3 fica com o espaço que sobra, que é menor.</strong></p>
+
+          <p>Alterando o valor do <strong>grupo de blocos .bloco-3</strong>, para um <strong>valor igual ao dos grupos 1 e 2</strong>, <strong>todos ocuparão o mesmo espaço disponivel.</strong></p>
+
+          <img src="imagens/flexitems5.jpg" alt="">
+
+          <p><strong>Todos ocupam o mesmo espaço, inclusive na linha superior, mesmo que seja imperceptivel nela mesmo quando há diferença.</strong></p>
+
+          <p>E se colocarmos um <strong>valor superior</strong> no primeiro bloco?</p>
+
+          <img src="imagens/flexitems6.jpg" alt="">
+
+          <p>Observe que o <strong>.bloco-1</strong> tem agora um <strong>valor de 2</strong>, superior ao <strong>valor 1</strong> dos <strong>blocos 2 e 3.</strong>.<strong></strong></p>
+          <p><strong>Intuitivamente pensamos que por ter um valor que é o dobro, os quadrados do bloco 1 teriam o dobro de tamanho dos outros, certo? Humm, não é bem assim...</strong> ele não terá o dobro de tamanho dos outros mesmo que a proporção seja de 2 pra 1.</p> <p>Nesse caso o que ocorre é que temos um <strong>valor fixo</strong> para nossos blocos que é de<code> width: 150px</code> <strong>(largura)</strong>. Na verdade a proporção do nosso <code>flex-grow</code> <strong>não é a largura total do elemento</strong>, é apenas o que <strong>ele irá crescer a partir do tamanho padrão dele...</strong></p>
+
+          <p><strong>Vamos exemplificar para entendermos melhor:</strong></p>
+
+          <img src="imagens/flexitems7.jpg" alt="">
+
+          <p><strong>O tamanho total do bloco 1</strong> (sinalizado como o quadrado numero 10 na figura) é de <strong>456px </strong>e o do <strong>bloco 2</strong> (sinalizado como o quadrado numero 11) é de <strong>303px</strong></p>
+
+          <p><strong>No bloco 1</strong>, se <strong>subtrairmos o valor total de 456px</strong> (que é o valor atual do flex-grow) <strong>pelo valor padrão que indicamos no CSS</strong> (que é de 150px) <strong>teremos o total de 306px</strong></p>
+
+          <p><strong>No bloco 2</strong>, se <strong>subtrairmos o valor total de 303px</strong> (que é o valor atual do flex-grow) <strong>pelo valor padrão que indicamos no CSS</strong> (que é de 150px) <strong>teremos o total de 153px</strong></p>
+
+          <p>E sim, <strong>306 é o dobro de 153</strong>, ou seja, <strong>o espaço que o quadradro cresceu fora o tamanho original do nosso elemento, é proporcional</strong>... o <code>flex-grow:2</code> vai <strong>crescer duas vezes mais</strong> que o <code>flex-grow:1</code> </p>
+
+          <p><strong>Resumidamente, ele não tem o dobro do tamanho, ele apenas cresceu 2x mais do que o que tem o valor 1.</strong> Isso valeria pra outros valores, como por exemplo 4 ser 4x maior em crescimento do que o valor 1 e etc.</p>
+
         </article>
 
         <article class="align-items" id="align-items">

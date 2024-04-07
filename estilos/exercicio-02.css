@@ -128,18 +128,48 @@ body > p > a:hover{
   font-size: 5.0rem;
 }
 
-.bloco-4 {
+.container2{
+  width: 100vw;
+  height: 100vh;
+  padding: 1.6rem;
+  display: flex;
+
+  flex-flow: row wrap;
+  /*flex-direction: row
+  flex-wrap: wrap;*/
+  
+  justify-content: center;
+
+  /*align-items: center;*/
+  align-content: center;
+
+  gap: 1.0rem 3.0rem;
+  /*row-gap: 10px
+  column-gap: 30px*/
+
+}
+
+.bloco-1-1 {
+
+  order: 0;
+  flex-grow: 2;
+
+
   width: 150px;
   height: 150px;
   background-color: orangered;
   border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
+  border-radius: 5.0rem;
   text-align: center;
   font-size: 5.0rem;
 }
 
-.bloco-5 {
+.bloco-2-1 {
+
+  order: 0;
+  flex-grow: 1;
+
+
   width: 150px;
   height: 150px;
   background-color: rebeccapurple;
@@ -150,73 +180,11 @@ body > p > a:hover{
   font-size: 5.0rem;
 }
 
-.bloco-6 {
-  width: 150px;
-  height: 150px;
-  background-color: chartreuse;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
+.bloco-3-1 {
 
-.bloco-7 {
-  width: 150px;
-  height: 150px;
-  background-color: orangered;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
+  order: 0;
+  flex-grow: 1;
 
-.bloco-8 {
-  width: 150px;
-  height: 150px;
-  background-color: rebeccapurple;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
-
-.bloco-9 {
-  width: 150px;
-  height: 150px;
-  background-color: chartreuse;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
-
-.bloco-10 {
-  width: 150px;
-  height: 150px;
-  background-color: orangered;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
-
-.bloco-11 {
-  width: 150px;
-  height: 150px;
-  background-color: rebeccapurple;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5.0rem;
-}
-
-.bloco-12 {
   width: 150px;
   height: 150px;
   background-color: chartreuse;

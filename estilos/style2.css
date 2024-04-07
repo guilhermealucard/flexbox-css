@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* > img{
+  max-width: 100%;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -152,7 +156,6 @@ ul {
 }
 
 .intro > img {
-  width: 100%;
   padding: 1rem;
 }
 
@@ -171,19 +174,24 @@ ul {
   text-indent: 3rem;
 }
 
-.justify-content {
+.flex-grow {
   background-color: rgb(189, 150, 185);
   border: 0.3rem solid black;
 }
 
-.justify-content > h2 {
+.flex-grow > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
 
-.justify-content > p {
+.flex-grow > p {
   padding: 1rem;
   text-indent: 3rem;
+}
+
+.flex-grow > img{
+  max-width: 100%;
+  height: auto;
 }
 
 .align-items {
