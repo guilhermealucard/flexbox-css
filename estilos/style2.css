@@ -117,6 +117,19 @@ ul {
   list-style: none;
 }
 
+div.atencao{
+  background-color: lightgray;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+div.atencao > h2{
+  padding: 10px;
+}
+div.atencao > p{
+  padding: 10px;
+  
+}
 .intro {
   text-align: center;
   background-color: rgb(223, 190, 160);
@@ -194,17 +207,17 @@ ul {
   height: auto;
 }
 
-.align-items {
+.flex-shrink {
   background-color: rgb(212, 115, 147);
   border: 0.3rem solid black;
 }
 
-.align-items > h2 {
+.flex-shrink > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
 
-.align-items > p {
+.flex-shrink > p {
   padding: 1rem;
   text-indent: 3rem;
 }

@@ -102,39 +102,69 @@
 
         </article>
 
-        <article class="align-items" id="align-items">
-          <h2><code>align-items</code></h2>
-          <p>
-            A propriedade CSS <code>align-items</code> é utilizada em containers
-            flexíveis para controlar o alinhamento dos itens flexíveis ao longo
-            do eixo transversal. Ela determina como os itens são posicionados
-            verticalmente dentro do container flexível. Existem vários valores
-            possíveis para <code>align-items</code>, cada um com um efeito
-            específico no layout:
-          </p>
-          <img src="imagens/flexbox-6.jpg" alt="" />
-          <ul>
-            <li>
-              flex-start: Os itens são alinhados no início do container ao longo
-              do eixo transversal.
-            </li>
-            <li>
-              flex-end: Os itens são alinhados no final do container ao longo do
-              eixo transversal.
-            </li>
-            <li>
-              center: Os itens são centralizados verticalmente dentro do
-              container ao longo do eixo transversal.
-            </li>
-            <li>
-              stretch: Os itens são esticados para preencher todo o tamanho do
-              container no eixo transversal.
-            </li>
-            <li>
-              baseline: Os itens são alinhados com base na linha de base de seu
-              conteúdo, se houver, dentro do container.
-            </li>
-          </ul>
+        <article class="flex-shrink" id="flex-shrink">
+          <h2><code>flex-shrink</code></h2>
+          
+            <p>Se o <code>flex-grow</code> é a habilidade dos itens de crescer, o <code>flex-shrink</code> (shrik do ingles; "encolher")<strong> é uma propriedade CSS que define o fator de encolhimento de um item flexível.</strong></p>
+
+             <p><strong>Se o tamanho total dos itens flexíveis for maior que o contêiner flexível, os itens encolherão para se ajustar de acordo com </strong><code>flex-shrink</code>. O <strong>valor padrão é 1</strong>, o que significa que o item flexível encolherá na mesma proporção que os outros itens flexíveis no contêiner.</p>
+
+             <p><strong>Se você definir <code>flex-shrink</code> como 0, o item não encolherá</strong>, independentemente do tamanho dos outros itens, assim como <strong>se vc definir <code>flex-shrink</code> como 2 ou mais, ele encolhera 2x ou mais que os outros itens</strong>, assim como os exemplos que demos no <code>flex-grow</code> só que no caso do <code>flex-shrink </code><strong>os valores proporcionais seriam para o encolhimento.</strong></p>
+
+             
+
+             <div class="atencao">
+             <h2>Atenção!</h2>
+             <strong>
+               <p>Para que a propriedade <code>flex-shrink</code> funcione corretamente, é necessário definir uma largura base para o container, que no nosso caso sera de <code>400px</code>. Além disso, a propriedade <code>flex-wrap</code> deve estar configurada como <code>nowrap</code> para evitar que os itens sejam quebrados em linhas múltiplas.</p>
+             </strong>
+
+              <img src="imagens/flexitems8.jpg" alt="">
+              <img src="imagens/flexitems9.jpg" alt="">
+
+              <p>Esse será o nosso codigo daqui em diante.</p>
+
+             
+             </div>
+
+             <p><strong>Vamos aos exemplos:</strong></p>
+
+             <p>Ao definir a <strong>largura do contêiner</strong> como <code>400px</code>, <strong>todos os elementos dentro dele reduzirão proporcionalmente o tamanho.</strong> Isso ocorre porque o <strong>valor padrão do <code>flex-shrink</code> é 1</strong>, permitindo que os itens encolham se necessário, desde que o contêiner tenha uma <strong>largura máxima estabelecida.</strong> Diferente do <code>flex-grow</code> e do <code>order</code>, cujos valores padrão são 0, o <code>flex-shrink</code> já está ativo por padrão.</p>
+
+             <img src="imagens/flexitems10.jpg" alt="">
+
+             <p>Se o nosso <code>flex-grow</code> é basicamente a <strong>propriedade inversa do</strong> <code>flex-shrink</code>, você pode entender que <strong>se colocarmos outros numeros como 2</strong> ou mais, eles serão nada mais que <strong>unidades de proporção</strong>, então adicionando o <code>flex-shrink:2</code> ao nosso<strong> bloco 3</strong>, <strong>ele vai encolher duas vezes mais que os outros dois blocos</strong></p>
+
+             <img src="imagens/flexitems11.jpg" alt="">
+
+             <p>Assim como no <code>flex-grow,</code> <strong>não é que o bloco 3 tem metade do tamanho dos blocos 1 e 2</strong>, mas sim o que ele<strong> encolheu é duas vezes mais do que os outros dois blocos</strong>.</p>
+
+             <p>Vamos ver na imagem esses valores:</p>
+
+             <img src="imagens/flexitems12.jpg" alt="">
+
+             <p>Na <strong>figura 1</strong> temos o <strong>valor dos 3 blocos</strong> após aplicarmos flex-shrink:2 no <strong>bloco 3</strong> e <code>flex-shrink:1</code> nos outros dois.</p>
+             <p>Na <strong>figura 2</strong> temos o <strong>valor total do elemento bloco3</strong> <code>(150px)</code> <strong>subtraido do valor atual apos o <code>flex-shrink:2</code> </strong><code>(95px) </code><strong>que da o total de diminuição de <code>55px</code></strong></p>
+             <p>Na <strong>figura 3</strong> temos o <strong>total de diminuição do bloco2</strong>, que seria tamanho padrão <code>(150px)</code> ,<strong>menos o tamanho padrão após um</strong> <code>flex-shrink:1</code> <code>(122,5px)</code> que da o total de <strong><code>27,5px</code></strong></p>
+             <p><strong><code>27,5px</code> é exatamente a metade de <code>55px.</code></strong></p>
+
+             <p>Se colocarmos <code>flex-shrink:0</code> no nosso <strong>bloco 1</strong>, veremos que ele <strong>nunca irá encolher.</strong></p>
+             <p>Nosso <strong>bloco 2 irá encolher pelo valor padrão do</strong> <code>flex-shrink:1 </code>e <strong>nosso bloco 3, 2x mais pelo valor</strong> <code>flex-shrink:2</code></p>
+             <img src="imagens/flexitems13.jpg" alt="">
+
+            <p>Aqui, assim como no <code>flex-grow</code>, <strong>numeros negativos não se aplicam pois são unidades de proporção.</strong></p>
+
+            <p><strong>Para o nosso proximo conteudo, deixaremos nosso codigo base com os <code>flex-shrink</code> no 1 (o padrão) e retiraremos a largura base.</strong></p>
+
+            <img src="imagens/flexitems14.jpg" alt="">
+
+
+
+
+
+
+          
+         
         </article>
 
         <article class="flex-wrap" id="flex-wrap">
