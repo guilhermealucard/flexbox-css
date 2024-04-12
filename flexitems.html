@@ -167,32 +167,53 @@
          
         </article>
 
-        <article class="flex-wrap" id="flex-wrap">
-          <h2><code>flex-wrap</code></h2>
+        <article class="flex-basis" id="flex-basis">
+          <h2><code>flex-basis</code></h2>
           <p>
-            A propriedade CSS flex-wrap é utilizada em containers flexíveis para
-            controlar o comportamento de quebra de linha dos itens flexíveis
-            quando não há espaço suficiente no container para todos os itens
-            ocuparem uma única linha. Ela determina se os itens devem ser
-            dispostos em uma única linha (o valor padrão) ou se podem ser
-            quebrados em linhas múltiplas. Existem três valores possíveis para
-            flex-wrap:
+            <code>flex-basis</code> é uma propriedade CSS que define o <strong>tamanho inicial de um item flexível antes de qualquer espaço livre ser distribuído de acordo com as propriedades</strong> <code>flex-grow</code> e <code>flex-shrink</code>. Ela determina o tamanho do conteúdo de um elemento ao longo do eixo principal de um contêiner flexível. 
           </p>
-          <img src="imagens/flexbox-7.jpg" alt="" />
-          <ul>
-            <li>
-              nowrap: Os itens são forçados a permanecerem em uma única linha,
-              mesmo que isso cause transbordamento do container.
-            </li>
-            <li>
-              wrap: Os itens são dispostos em várias linhas, se necessário, para
-              que todos se ajustem dentro do container.
-            </li>
-            <li>
-              wrap-reverse: Os itens são dispostos em várias linhas, começando
-              da última linha até a primeira.
-            </li>
-          </ul>
+          <p><strong>Basicamente, flex-basis define o tamanho dos nossos quadrados tanto em largura quanto em altura caso não tenhamos definido antes.</strong></p>
+
+          <p><em>Mas como ela define o tamanho dos itens?  </em></p>
+          <p><em>Ela ja tem algum padrão especifico?</em></p>
+          <p><em>E o que acontece com nossa configuração padrão de 150x150px?</em> </p>
+          <p><strong>Veremos tudo isso agora nos exemplos...</strong></p>
+
+
+          <img src="imagens/flexitems15.jpg" alt="" />
+
+          <p><strong>Por padrão, o valor de</strong> <code>flex-basis</code> é <code>auto</code>, <strong>a palavra "auto" é uma <em>keyword</em> (palavra-chave) e não um valor</strong>, e esse auto apenas diz para o código: <em><strong>"olhe para a <code>height</code> e a <code>width</code> que foi declarada no codigo e a utilize"</strong></em></p>
+
+          <p><em><strong>Mas e se não declararmos nenhum valor padrão de</em> <code>width</code> e <code>height?</code></strong></p>
+          <img src="imagens/flexitems16.jpg" alt="">
+          <p>Se não declaramos nenhum valor, <strong>o valor padrao de altura e largura será o tamanho do seu conteúdo.</strong></p>
+         <br>
+          <p><em><strong>E se colocarmos</em> <code>flex-basis:0</code>, <em>o que aconteceria?</strong></em></p>
+          <img src="imagens/flexitems17.jpg" alt="">
+          <p><strong>Vai continuar exatamente da mesma forma</strong> pois <strong>não estamos definindo nenhum valor para esses numeros</strong> e eles de fato vão <strong>continuar apenas do tamanho que tem o conteúdo.</strong></p>
+          <br>
+          <p><em>Então quer dizer que colocar flex-basis:0 e flex-basis:auto <strong>é a mesma coisa</strong>?</em> Ja adianto o spoiler... <strong>não é.</strong></p></p>
+
+          <p>Para mostrarmos essa diferença, teremos que <strong>alterar algumas propriedades</strong> dos itens, pois eles são identicos...</p>
+          <img src="imagens/flexitems18.jpg" alt="">
+          <p>Como visto na imagem, alteramos o conteudo do <strong>bloco 2</strong> para um <strong>conteúdo maior</strong> no nosso <strong>código HTML</strong> e no nosso <strong>código CSS</strong>, alteramos o valor de <code>flex-grow</code> para <code>1</code> nos <strong>blocos 1 e 2</strong> e para <code>2</code> no nosso <strong>bloco 3</strong></p>
+
+          <p><strong>Vamos ver as diferenças entre as duas configurações:</strong></p>
+          <img src="imagens/flexitems19a.jpg" alt="">
+          <p>Definindo <code>flex-basis:0</code>, o nosso <strong>bloco 1</strong> vai <strong>aumentar um pouquinho de tamanho</strong>, o <strong>bloco 3</strong> vai <strong>aumtentar duas vezes mais</strong> que o 1 e o nosso <strong>bloco 2</strong>, <strong>não vai ter seu tamanho aumentado</strong>, ele vai ficar no <strong>limite do seu conteúdo.</strong></p>
+          <p><em>Mas pq isso acontece?</em></p>
+          <p>Pq o <code>flex-basis:0</code> <strong>não vai levar em conta o conteúdo que colocamos no </strong><code>flex-grow</code> e sim <strong>o tamanho dos próprios elementos.</strong></p>
+          <img src="imagens/flexitems19b.jpg" alt="">
+          <p>Porém se alteramos nessa mesma estrutura para <code>flex-basis:auto</code>, o nosso <strong>conteúdo do bloco 2</strong> também<strong> vai ter um espaço dentro dele</strong>, assim como o <strong>bloco 1 tera esse mesmo espaço</strong>, pois ambos foram definidos como <code>flex-grow:1</code>. <strong>E o bloco 3 vai ter 2x mais espaço do que os dois primeiros blocos.</strong></p>
+          <p><strong> <code>flex-basis:auto</code> leva em conta o que definimos em <code>flex-grow</code> para o bloco 2.</strong></p>
+
+          <p>Agora voltando nossas configurações para o normal no HTML e no CSS, a gente pode <strong>alterar o flex-basis para tamanhaos específicos com unidades de medidas:</strong></p>
+          <img src="imagens/flexitems20.jpg" alt="">
+          <p>Assim com o a keyword "auto" <strong>existem diversas outras</strong>, porém não iremos nos aprofundar nelas.</p>
+          <p> <strong>Podemos conferir todas elas</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis" target="_blank">clicando aqui</a>.</p></p>
+
+          <p><strong>Manteremos nossos padrões de configuração para nossa próxima propriedade:</strong></p>
+          <img src="imagens/flexitems21.jpg" alt="">
         </article>
 
         <article class="flex-flow" id="flex-flow">

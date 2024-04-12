@@ -222,17 +222,17 @@ div.atencao > p{
   text-indent: 3rem;
 }
 
-.flex-wrap {
+.flex-basis {
   background-color: rgb(159, 248, 218);
   border: 0.3rem solid black;
 }
 
-.flex-wrap > h2 {
+.flex-basis > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
 
-.flex-wrap > p {
+.flex-basis > p {
   padding: 1rem;
   text-indent: 3rem;
 }

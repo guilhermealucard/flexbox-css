@@ -261,3 +261,111 @@ body > p > a:hover{
   text-align: center;
   font-size: 5.0rem;
 }
+
+.container4{
+
+  padding: 1.6rem;
+  display: flex;
+
+  flex-flow: row wrap;
+  /*flex-direction: row
+  flex-wrap: wrap;*/
+  
+  justify-content: center;
+
+  /*align-items: center;*/
+  align-content: center;
+
+  gap: 1.0rem 3.0rem;
+  /*row-gap: 10px
+  column-gap: 30px*/
+
+}
+
+.container4 > .bloco-basis-1 {
+
+  order: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+
+  /* width: 150px;
+  height: 150px; */
+  background-color: orangered;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5.0rem;
+  text-align: center;
+  font-size: 5.0rem;
+}
+
+.container4 > .bloco-basis-2 {
+    
+  order: 0;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  /* width: 150px;
+  height: 150px; */
+  background-color: rebeccapurple;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  /* overflow: hidden; */
+  text-align: center;
+  font-size: 5.0rem;
+  
+  }
+
+  .container4 > .bloco-basis-2-1 {
+    
+    order: 0;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: auto;
+  
+    /* width: 150px;
+    height: 150px; */
+    background-color: rebeccapurple;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    /* overflow: hidden; */
+    text-align: center;
+    font-size: 5.0rem;
+    
+    }
+
+.container4 > .bloco-basis-3 {
+
+  order: 0;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  /* width: 150px;
+  height: 150px; */
+  background-color: chartreuse;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 5.0rem;
+}
+
+.container4 > .bloco-basis-extra {
+    
+  order: 0;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 200px;
+
+  /* width: 150px;
+  height: 150px; */
+  background-color: rgb(255, 0, 212);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  /* overflow: hidden; */
+  text-align: center;
+  font-size: 5.0rem;
+  
+  }
