@@ -237,32 +237,32 @@ div.atencao > p{
   text-indent: 3rem;
 }
 
-.flex-flow {
+.flex {
   background-color: rgb(189, 150, 185);
   border: 0.3rem solid black;
 }
 
-.flex-flow > h2 {
+.flex > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
 
-.flex-flow > p {
+.flex > p {
   padding: 1rem;
   text-indent: 3rem;
 }
 
-.align-content {
+.align-self {
   background-color: rgb(212, 115, 147);
   border: 0.3rem solid black;
 }
 
-.align-content > h2 {
+.align-self > h2 {
   padding: 1rem;
   border: 0.1rem solid black;
 }
 
-.align-content > p {
+.align-self > p {
   padding: 1rem;
   text-indent: 3rem;
 }

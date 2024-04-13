@@ -216,95 +216,42 @@
           <img src="imagens/flexitems21.jpg" alt="">
         </article>
 
-        <article class="flex-flow" id="flex-flow">
-          <h2><code>flex-flow</code></h2>
+        <article class="flex" id="flex">
+          <h2><code>flex</code></h2>
           <p>
-            A propriedade CSS flex-flow é uma abreviação conveniente que combina
-            as propriedades flex-direction e flex-wrap em uma única declaração.
-            Isso permite definir a direção de layout dos itens flexíveis ao
-            longo do eixo principal e controlar se os itens podem ser quebrados
-            em múltiplas linhas, tudo em uma única linha de código.
+           Sim, <code>flex</code> também é uma <strong>propriedade flexbox</strong>, ela na verdade é um <strong>encurtador</strong>, uma <strong>junção de 3 propriedades</strong> que a gente viu anteriormente: <code>flex-grow</code>, <code>flex-shrink</code> e <code>flex-basis</code>, então <strong>ao invés de colocarmos</strong> por exemplo, <code>flex-grow:0</code>, <code>flex-shrink:1</code> e <code>flex-basis:auto</code>, <strong>podemos resumir</strong> como no exemplo:
+           <img src="imagens/flexitems22.jpg" alt="">
+           <p><strong>A ordem precisa ser mantida desta forma:</strong> valor de <code>flex-grow</code>, valor de <code>flex-shrink</code> e depois o valor de <code>flex-basis</code>, ficando assim: <code>flex: 0 1 auto</code></p>
+
+           <p><strong>Vamos deixar o nosso codigo como na tabela da direita, ja com o encurtador flex e vamos deixar as propriedades como comentario.</strong></p>
           </p>
-          <p>A sintaxe geral da propriedade flex-flow é:</p>
-          <code>flex-flow: &lt;flex-direction&gt; &lt;flex-wrap&gt;; </code>
-          <p>No estudo usaremos:</p>
-          <code>flex-flow: row wrap; </code>
+
+          <p><strong>Uma dica interssante: Use (CTRL + ;) para comentar/retirar comentarios mais rapidamente.</strong></p>
         </article>
 
-        <article class="align-content" id="align-content">
-          <h2><code>align-content</code></h2>
+        <article class="align-self" id="align-self">
+          <h2><code>align-self</code></h2>
           <p>
-            A propriedade CSS <code>align-conten</code>t é utilizada em
-            containers flexíveis de múltiplas linhas para controlar o
-            alinhamento dos itens flexíveis ao longo do eixo transversal, quando
-            há espaço extra disponível no container. Lembrando que essa
-            propriedade só se torna ativa se utilizarmos
-            <code>flex-wrap: wrap;</code>
+            Por último e não menos importante, a propriedade <code>align-self</code> permite que você <strong>alinhe individualmente um item</strong> dentro de um <strong>contêiner flexível</strong>, <strong>independentemente do alinhamento padrão definido pela propriedade</strong> <code>align-items</code> do contêiner e escolher valores como <code>auto</code>, <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, ou <code>stretch</code>
           </p>
-          <img src="imagens/flexbox-8.jpg" alt="" />
-          <ul>
-            <li>
-              flex-start: Alinha as linhas de itens no início do container.
-            </li>
-            <li>flex-end: Alinha as linhas de itens no final do container.</li>
-            <li>
-              center: Centraliza as linhas de itens verticalmente no container.
-            </li>
-            <li>
-              space-between: Distribui o espaço restante de forma uniforme entre
-              as linhas de itens, com espaços iguais entre elas e nas
-              extremidades.
-            </li>
-            <li>
-              space-around: Distribui o espaço restante de forma uniforme entre
-              as linhas de itens, com espaços iguais ao redor delas.
-            </li>
-            <li>
-              stretch: Estica as linhas de itens para preencher todo o espaço
-              disponível no eixo transversal.
-            </li>
-          </ul>
+
+          <p><strong>Vejamos o nosso container com a propriedade align-items defininda:</strong></p>
+
+          <img src="imagens/flexitems23.jpg" alt="">
+
+          <p><strong>Agora faremos os ajustes nos flex-items:</strong></p>
+          <p><strong>Definimos como <code>align-self:flex-start</code> e vemos que o bloco 1 foi para a linha acima sozinho, ignorando a regra do container:</strong></p>
+          <img src="imagens/flexitems23a.jpg" alt="">
+
+
+          <p><strong>Aqui definimos como <code>align-self:flex-end</code> e o bloco 2 foi para a linha de baixo:</strong></p>
+          <img src="imagens/flexitems23b.jpg" alt="">
+          <p><strong>Pro bloco 3, definimos como <code>align-self:center</code> e nada mudou pois essa ja era a regra normal do align-items do container:</strong></p>
+          <img src="imagens/flexitems23c.jpg" alt="">
+         
         </article>
 
-        <article class="gap" id="gap">
-          <h2>
-            <code>gap</code>, <code>row-gap</code> e <code>column-gap</code>
-          </h2>
-          <p>
-            As propriedades gap, row-gap e column-gap são utilizadas em layouts
-            de grade (grid) para controlar o espaçamento entre as linhas e
-            colunas dos itens dentro do grid.
-          </p>
-          <ul>
-            <li>
-              gap: Esta propriedade CSS é uma abreviação conveniente para
-              definir o espaçamento entre as linhas e colunas de um grid. Ela
-              define o espaçamento tanto horizontalmente (entre as colunas)
-              quanto verticalmente (entre as linhas) do grid. Quando usada
-              sozinha, ela define o mesmo valor para row-gap e column-gap. Por
-              exemplo: gap: 10px; define um espaçamento de 10 pixels entre as
-              linhas e colunas.
-            </li>
-            <li>
-              row-gap: Esta propriedade CSS define o espaçamento entre as linhas
-              de um grid. Ela é usada para controlar o espaçamento vertical
-              entre as linhas, deixando um espaço definido entre cada linha do
-              grid.
-            </li>
-            <li>
-              column-gap: Esta propriedade CSS define o espaçamento entre as
-              colunas de um grid. Ela é usada para controlar o espaçamento
-              horizontal entre as colunas, deixando um espaço definido entre
-              cada coluna do grid.
-            </li>
-          </ul>
-        </article>
-
-        <article class="revisao" id="revisao">
-          <h2>Hora da Revisão!</h2>
-
-          <img src="imagens/flexbox-9.jpg" alt="" />
-        </article>
+        
       </section>
     </main>
   </body>
