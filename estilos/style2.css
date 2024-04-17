@@ -17,7 +17,7 @@ html {
 
 body {
   padding-top: 200px;
-  background-color: black;
+  background-color: rgb(223, 190, 160);
   color: white;
   width: 100vw;
   height: 100vh;
@@ -47,23 +47,34 @@ width: 100px;
 display: block;
 margin-left: auto;
 margin-right: auto;
-padding-top: 5px;
+padding-top: 15px;
 
 
 }
 
 nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+  gap: 50px;
+  margin-left: 100px;
+  
 }
 
-nav > div{
+nav > a{
+  text-decoration: none;
+  color: black;
   border: 1px solid black;
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+nav > a:hover{
+  background-color: yellow;
 }
 
 main {
@@ -107,6 +118,28 @@ article {
   padding-bottom: 5rem;
   margin-bottom: 5rem;
   border-radius: 5rem;
+  text-align: center;
+  border: 0.3rem solid black;
+}
+
+article > h1{
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+article > h2{
+  padding: 1rem;
+}
+
+article > p{
+  padding: 2rem;
+  text-indent: 3rem;
+}
+
+article > img{
+  width: 100%;
+  padding: 1rem;
 }
 
 ul {
@@ -115,179 +148,45 @@ ul {
   text-decoration: none;
   border: 3px solid black;
   list-style: none;
-}
-
-div.atencao{
-  background-color: lightgray;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-div.atencao > h2{
-  padding: 10px;
-}
-div.atencao > p{
-  padding: 10px;
-  
-}
-.intro {
-  text-align: center;
-  background-color: rgb(223, 190, 160);
-  border: 0.3rem solid black;
-}
-
-.intro > ul {
   text-align: justify;
   padding: 2rem;
-  background-color: rgb(223, 190, 160);
+  background-color: rgb(221, 215, 210);
   border: none;
   list-style: disc;
   margin: 1rem;
 }
 
-.intro > h1 {
-  display: block;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
-
-.intro > p {
-  padding: 2rem;
-}
-
-.intro > .link > a {
-  text-decoration: none;
-  color: red;
-  border: 2px solid red;
-  border-radius: 2.5rem;
-  padding: 0.5rem;
-}
-
-.intro > .link > a:hover {
-  background-color: red;
-  color: rgb(223, 190, 160);
-}
-
-.intro > img {
-  padding: 1rem;
+.intro {
+  background-color: rgb(255, 255, 255);
 }
 
 .order {
   background-color: rgb(159, 248, 218);
-  border: 0.3rem solid black;
-}
-
-.order > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.order > p {
-  padding: 1rem;
-  text-indent: 3rem;
 }
 
 .flex-grow {
   background-color: rgb(189, 150, 185);
-  border: 0.3rem solid black;
-}
-
-.flex-grow > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.flex-grow > p {
-  padding: 1rem;
-  text-indent: 3rem;
-}
-
-.flex-grow > img{
-  max-width: 100%;
-  height: auto;
 }
 
 .flex-shrink {
   background-color: rgb(212, 115, 147);
-  border: 0.3rem solid black;
 }
 
-.flex-shrink > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.flex-shrink > p {
-  padding: 1rem;
-  text-indent: 3rem;
+.flex-shrink > .atencao{
+  background-color: rgb(204, 200, 200);
+  margin: 20px;
+  padding: 20px;
 }
 
 .flex-basis {
   background-color: rgb(159, 248, 218);
-  border: 0.3rem solid black;
-}
-
-.flex-basis > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.flex-basis > p {
-  padding: 1rem;
-  text-indent: 3rem;
 }
 
 .flex {
   background-color: rgb(189, 150, 185);
-  border: 0.3rem solid black;
-}
-
-.flex > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.flex > p {
-  padding: 1rem;
-  text-indent: 3rem;
 }
 
 .align-self {
   background-color: rgb(212, 115, 147);
-  border: 0.3rem solid black;
 }
 
-.align-self > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.align-self > p {
-  padding: 1rem;
-  text-indent: 3rem;
-}
-
-.gap {
-  background-color: rgb(159, 248, 218);
-  border: 0.3rem solid black;
-}
-
-.gap > h2 {
-  padding: 1rem;
-  border: 0.1rem solid black;
-}
-
-.gap > p {
-  padding: 1rem;
-  text-indent: 3rem;
-}
-
-.revisao {
-  background-color: rgb(189, 150, 185);
-  padding: 1rem;
-  border: 0.3rem solid black;
-}
-
-.revisao > h2 {
-  padding: 1rem;
-}

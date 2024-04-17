@@ -27,7 +27,8 @@ body > p{
 }
 
 body > p > a{
-  color: yellow;
+  color: black;
+  background-color: white;
   text-decoration: none;
   border: 2px solid white;
   border-radius: 2.5rem;

@@ -35,6 +35,7 @@ body > p{
 body > p > a{
   color: rgb(0, 0, 0);
   text-decoration: none;
+  background-color: white;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2.5rem;
   padding: 1.0rem;
